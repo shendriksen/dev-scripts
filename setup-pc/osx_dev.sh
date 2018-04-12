@@ -77,9 +77,12 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing Watchman'
   brew install watchman
 
-  echo 'Installing AWS-CLI"
+  echo 'Installing AWS-CLI'
   brew install awscli
   aws configure
+
+  echo 'Installing AWS-ECS-CLI'
+  brew install amazon-ecs-cli
 
   echo 'Installing Java'
   brew cask install java
