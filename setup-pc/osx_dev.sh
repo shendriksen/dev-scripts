@@ -39,6 +39,9 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing core utils'
   brew install coreutils
 
+  echo 'Installing caffeine'
+  brew cask install caffeine
+
   echo 'Installing jq'
   brew install jq
 
@@ -128,6 +131,14 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   brew cask install kdiff3
   git config --global merge.tool kdiff3
 
+  echo 'Installing Keybase'
+  brew cask install keybase
+
+  echo 'Installing Authy'
+  brew cask install authy
+
+  echo 'Installing assume-role'
+  brew install remind101/formulae/assume-role
 fi
 
 exit 0
