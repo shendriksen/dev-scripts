@@ -139,6 +139,10 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 
   echo 'Installing assume-role'
   brew install remind101/formulae/assume-role
+
+  echo 'Installing useful shell scipts'
+  chmod -R +x ../useful-shell-scripts
+  cp ../useful-shell-scripts/* /usr/local/bin/
 fi
 
 exit 0
