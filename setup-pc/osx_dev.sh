@@ -45,6 +45,9 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing jq'
   brew install jq
 
+  echo 'Installing ipcalc'
+  brew install ipcalc
+
   echo 'Installing oath-toolkit'
   brew install oath-toolkit
   
@@ -122,10 +125,6 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 
   echo 'Installing Dropbox'
   brew cask install dropbox
-
-  echo 'Installing Android Studio + extras'
-  brew cask install android-sdk
-  brew cask install android-studio
 
   echo 'Installing KDiff3'
   brew cask install kdiff3
