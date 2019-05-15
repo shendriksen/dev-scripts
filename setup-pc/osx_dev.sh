@@ -80,6 +80,9 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing Watchman'
   brew install watchman
 
+  echo 'Adding AWS Brew Tap'
+  brew tap aws/tap
+
   echo 'Installing AWS-CLI'
   brew install awscli
   aws configure
