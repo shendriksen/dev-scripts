@@ -69,9 +69,6 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   nvm ls
   nvm use $NODE_VERSION
   
-  echo 'Installing Yarn'
-  brew install yarn
-
   echo 'Installing Zsh'
   brew install zsh zsh-completions
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
@@ -90,14 +87,14 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing AWS-ECS-CLI'
   brew install amazon-ecs-cli
 
+  echo 'Installing AWS-SAM-CLI'
+  brew install aws-sam-cli
+
   echo 'Installing Java'
   brew cask install java
 
   echo 'Installing VS Code'
   brew cask install visual-studio-code
-  
-  echo 'Installing Intellij IDEA'
-  brew cask install intellij-idea
   
   echo 'Installing Docker'
   brew cask install docker
@@ -122,9 +119,6 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 
   echo 'Installing Charles'
   brew cask install charles
-
-  echo 'Installing Dropbox'
-  brew cask install dropbox
 
   echo 'Installing KDiff3'
   brew cask install kdiff3
