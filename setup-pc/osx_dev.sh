@@ -116,6 +116,9 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 
   echo 'Installing Vagrant'
   brew cask install vagrant
+
+  echo 'Installing MySqlWorkbench'
+  brew cask install mysqlworkbench
   
   echo 'Installing GraphIql'
   brew cask install graphiql
