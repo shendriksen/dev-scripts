@@ -142,6 +142,10 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 
   echo 'Adding role switch to shell'
   echo 'switch' >> ~/.zshrc
+
+  echo 'Installing zsh-autosuggestions'
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  echo 'Add "plugins=(zsh-autosuggestions)" to your profile'
 fi
 
 exit 0
