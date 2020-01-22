@@ -77,9 +77,6 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing tree'
   brew install tree
 
-  echo 'Installing Watchman'
-  brew install watchman
-
   echo 'Adding AWS Brew Tap'
   brew tap aws/tap
 
@@ -102,8 +99,8 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing Docker'
   brew cask install docker
   
-  echo 'Installing Chrome'
-  brew cask install google-chrome
+  echo 'Installing Firefox'
+  brew cask install firefox
   
   echo 'Installing Slack'
   brew cask install slack
@@ -136,12 +133,15 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing Authy'
   brew cask install authy
 
-  echo 'Installing assume-role'
-  brew install remind101/formulae/assume-role
+  echo 'Installing Amethyst'
+  brew cask install amethyst
 
   echo 'Installing useful shell scipts'
   chmod -R +x ../useful-shell-scripts
   cp ../useful-shell-scripts/* /usr/local/bin/
+
+  echo 'Adding role switch to shell'
+  echo 'switch' >> ~/.zshrc
 fi
 
 exit 0
