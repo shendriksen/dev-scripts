@@ -1,10 +1,12 @@
 # AWS Role switching helper
-function switch {
-  if [ -z "$1" ]; then
-    export AWS_DEFAULT_PROFILE=samhendr
-  else
-    export AWS_DEFAULT_PROFILE=$1
-  fi
+GREEN="\033[1;32m"
+alias role='echo "Active Role: ${GREEN}$AWS_DEFAULT_PROFILE"'
 
-  role
-}
+if [ -z "$1" ]; then
+  export AWS_DEFAULT_PROFILE=samhendr
+else
+  export AWS_DEFAULT_PROFILE=$1
+fi
+
+role
+
