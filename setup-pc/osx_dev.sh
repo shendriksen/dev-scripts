@@ -36,6 +36,9 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing Brew Cask'
   brew tap caskroom/cask
 
+  echo 'Installing Brew Cask Versions'
+  brew tap homebrew/cask-versions
+
   echo 'Installing core utils'
   brew install coreutils
 
