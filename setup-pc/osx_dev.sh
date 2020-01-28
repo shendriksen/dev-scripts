@@ -39,6 +39,9 @@ if /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
   echo 'Installing Brew Cask Versions'
   brew tap homebrew/cask-versions
 
+  echo 'Installing openjdk tap'
+  brew tap adoptopenjdk/openjdk
+
   echo 'Installing core utils'
   brew install coreutils
 
