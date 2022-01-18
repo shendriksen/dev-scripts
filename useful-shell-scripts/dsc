@@ -1,3 +1,0 @@
-#!/bin/bash
-# Docker Stop Containers - stop all running docker containers
-docker stop $(docker ps -q)
